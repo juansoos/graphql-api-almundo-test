@@ -25,6 +25,10 @@ Para correr la API en desarrollo se ejecuta `npm run start:dev || yarn run start
 
 Una vez se instalen las dependencias automáticamente se ejecutará el script `build`, y luego para iniciar la API en producción se ejecuta `npm start || yarn start`
 
+La API se encuentra alojada en [now](https://zeit.co/now) con la URL https://graphql-api-almundo.now.sh/graphql
+
+También se puede acceder a la  interfaz de GraphiQL con la URL https://graphql-api-almundo.now.sh/graphiql
+
 ---
 
 ## Built With
