@@ -30,6 +30,7 @@ Una vez se instalen las dependencias automáticamente se ejecutará el script `b
 ## Built With
 
 * [Express](https://expressjs.com/) - The web framework used
+* [Apollo Server](https://github.com/apollographql/apollo-server) GraphQL server para Express
 
 ---
 
