@@ -1,9 +1,24 @@
 {
   "name": "api-graphql",
+  "description": "GraphQL API de la prueba de almundo",
   "version": "1.0.0",
+  "scripts": {
+    "start:dev": "nodemon index.js --exec babel-node",
+    "start": "NODE_ENV=production node server.js",
+    "build": "babel ./ --out-dir server --ignore node_modules,server.js",
+    "postinstall": "npm run build"
+  },
+  "author": {
+    "email": "juliansotelo0825@gmail.com",
+    "name": "Julián Sotelo",
+    "url": "https://github.com/juansoos"
+  },
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
@@ -11,9 +26,13 @@
   },
   "dependencies": {
     "apollo-server-express": "^1.3.2",
+    "babel-polyfill": "^6.26.0",
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "co": "^4.6.0",
     "express": "^4.16.2",
     "graphql": "^0.13.1",
-    "graphql-tools": "^2.21.0"
+    "graphql-tools": "^2.21.0",
+    "mongodb": "^2.2.33"
   }
 }
